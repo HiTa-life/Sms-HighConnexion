@@ -28,6 +28,7 @@ SmsController extends AbstractController
     public function GetMessage(Sms $sms,SmsRepository $smsRepository)
     {
         $this->$smsRepository->findAll();
+        $dispatcher = $this->get("dispatcher");
 
     }
 }
